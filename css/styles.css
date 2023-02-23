@@ -22,7 +22,9 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  box-sizing: border-box;
 }
+
 
 body {
   font-family: "Roboto" sans-serif;
@@ -545,26 +547,29 @@ padding: 6px 22px;
   color: var(--white-txt-color);
 }
 
-/*  */
-.footer-left-side {
-  display: flex;
-  gap: 70px;
-}
+
+
 .footer-second {
-  width: 206px;
+  
 }
-.footer-lists {
+
+.footer-title{
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-txt-color);
+}
+
+.footer-lists{
   display: flex;
   width: 206px;
   align-items: center;
   justify-content: flex-end;
-  gap: 10px;
   list-style: none;
 }
 
-
-.footer-link {
-  display: inline-block;
+.footer-linkk{
+  display:inline-block;
   width: 44px;
   height: 44px;
   text-decoration: none;
@@ -573,13 +578,16 @@ padding: 6px 22px;
   border-radius: 50%;
   fill: var(--white-txt-color);
 }
-.footer-link:hover,
-.footer-link:focus {
+
+
+.footer-linkk:hover,
+.footer-linkk:focus {
   background-color: var(--blue-txt-color);
   border-radius: 50%;
 }
+
 .footer-icon {
   width: 20px;
   height: 20px;
   fill: var(--white-txt-color);
-}
+} 
